@@ -1,0 +1,240 @@
+/* ==============================
+   RESET & BASE
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f9;
+}
+
+/* ==============================
+   HEADER
+============================== */
+header {
+    background-color: #1e3a8a; /* bleu profond */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.header-container img {
+    height: 80px;
+    object-fit: contain;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+}
+
+.header-text p {
+    font-style: italic;
+    color: #dbeafe;
+}
+
+/* ==============================
+   NAVIGATION
+============================== */
+nav {
+    background-color: #2563eb; /* bleu vif */
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fde68a; /* accent jaune clair */
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2563eb;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1e40af;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #1e40af;
+}
+
+/* ==============================
+   GRID CARDS
+============================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.card ul {
+    list-style: disc inside;
+    margin-top: 10px;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
+/* ==============================
+   NEWS SECTION
+============================== */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.news-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   CONTACT
+============================== */
+#contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+footer {
+    background-color: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    .header-container img {
+        height: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    }
+    header img {
+        width: 80px;
+    }
+}
+
+
