@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://junior-adeni-1996.github.io/sitemap.xml
