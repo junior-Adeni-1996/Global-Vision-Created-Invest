@@ -1,177 +1,357 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="q-9R9cNqZLtUd1Hu3LS9riFwjj4Q9czdFp4wahmIpZk" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Vision & Created Invest</title>
-
-    <!-- SEO -->
-    <meta name="description" content="Global Vision & Created Invest : une structure intégrée qui informe, innove et investit pour un développement durable et inclusif.">
-    <meta name="keywords" content="investissement, innovation, développement durable, économie, technologie, Congo, Global Vision">
-    <meta name="author" content="Global Vision & Created Invest">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Global Vision & Created Invest">
-    <meta property="og:description" content="Une structure intégrée qui informe, innove et investit pour un développement durable et inclusif.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="Images/Logo.png">
-
-    <!-- Favicon -->
-    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/568e778f0b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<header>
-    <div class="header-container">
-        <img src="images/Logo.png" alt="Logo de Global Vision & Created Invest" loading="lazy">
-        <div class="header-text">
-            <h1>Global Vision & Created Invest</h1>
-            <p>“Inform. Innovate. Invest.”</p>
-        </div>
-    </div>
-</header>
 
-<nav aria-label="Navigation principale">
-    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">
-        ☰
-        <span class="sr-only">Ouvrir le menu de navigation</span>
-    </button>
-    <ul id="nav-links" class="hidden">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#news">Actualités</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
 
-<main>
-    <section id="about" role="region" aria-labelledby="about-title">
-        <h2 id="about-title">À propos de nous</h2>
-        <p>Global Vision & Created Invest est une structure dynamique et intégrée, positionnée à l'intersection de l'information, de l'innovation et de l'investissement. Notre mission est de catalyser la croissance en transformant les idées novatrices en réussites économiques tangibles.</p>
-        <p>Nous soutenons également l’État dans ses actions, particulièrement dans les secteurs vulnérables et locaux, afin de favoriser un développement inclusif et durable pour l’ensemble de la communauté.</p>
-    </section>
-
-    <section id="mission" role="region" aria-labelledby="mission-title">
-        <h2 id="mission-title">Notre Mission</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Informer</h3>
-                <p>Nous nous engageons à informer et sensibiliser le public sur les enjeux économiques, technologiques, culturels et sociaux.</p>
-                <ul>
-                    <li><strong>Économique :</strong> Promouvoir la culture financière et entrepreneuriale.</li>
-                    <li><strong>Technologique :</strong> Mettre en lumière les innovations et leurs impacts.</li>
-                    <li><strong>Culturel :</strong> Valoriser la diversité culturelle et artistique.</li>
-                    <li><strong>Social :</strong> Explorer les enjeux sociétaux pour une citoyenneté engagée.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Innover</h3>
-                <p>Développer des solutions innovantes créant une valeur durable.</p>
-                <ul>
-                    <li>Solutions adaptées aux besoins actuels et futurs.</li>
-                    <li>Impact économique, social et technologique concret.</li>
-                    <li>Combiner expertise, créativité et technologie.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Investir</h3>
-                <p>Mettre en relation des investisseurs avec des projets innovants pour assurer leur concrétisation.</p>
-                <ul>
-                    <li>Recherche ciblée d’investisseurs.</li>
-                    <li>Mise en relation stratégique et partenariats solides.</li>
-                    <li>Accompagnement complet des projets.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Conseiller</h3>
-                <p>Agir comme guide stratégique pour les porteurs de projets et leurs partenaires.</p>
+    <nav aria-label="Navigation principale" id="navbar" class="navbar">
+        <div class="navbar_wrapper container">
+            <a href="#">
+                <img src="Images/Logo.png" alt="Logo de Global Vision & Created Invest">
+            </a>
+            <!-- <a href="#" class="logo-two" >
+                <img src="Images/Logo.png" alt="Logo de Global Vision & Created Invest">
+            </a> -->
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#news">Actualités</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="humburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
-    </section>
-
-    <section id="projects" role="region" aria-labelledby="projects-title">
-        <h2 id="projects-title">Conception des projets</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Projet 1 : Plateforme communautaire multimédia locale “Voix du Quartier”</h3>
-                <p><strong>Objectif :</strong> Créer un média hyperlocal qui informe, engage et valorise la communauté locale.</p>
-                <ul>
-                    <li>Application et site web centralisant l’actualité locale.</li>
-                    <li>Espace participatif pour articles, vidéos ou podcasts.</li>
-                    <li>Journalisme collaboratif avec écoles et associations locales.</li>
-                    <li>Monétisation via publicités locales et abonnements.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Projet 2 : “EcoQuartier Connect” – Communautés durables et autonomes</h3>
-                <p><strong>Objectif :</strong> Promouvoir des modes de vie durables et un impact social positif.</p>
-                <ul>
-                    <li>Micro-jardins urbains et fermes verticales.</li>
-                    <li>Réseau d’économie circulaire : compostage et recyclage.</li>
-                    <li>Formation et emploi pour les jeunes et femmes locales.</li>
-                    <li>Application pour suivre et coordonner les activités.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Projet 3 : Investissement et Création de Valeur</h3>
-                <p><strong>Objectif :</strong> Faciliter l’investissement stratégique dans des projets innovants.</p>
-                <ul>
-                    <li>Identifier des projets à fort potentiel.</li>
-                    <li>Créer des partenariats solides et accompagnement complet.</li>
-                    <li>Développer des outils de transparence et suivi des investissements.</li>
-                </ul>
+    </nav>
+    <header id="header">
+        <div class="header-container">
+            <div class="header-text container">
+                <h1>Global Vision & Created Invest</h1>
+                <p>“Inform. Innovate. Invest.”</p>
             </div>
         </div>
-        <div class="projects-summary">
-            <p>Ces projets combinent innovation, investissement et engagement communautaire, contribuant à la cohésion sociale et à la responsabilisation des jeunes.</p>
-        </div>
-    </section>
+    </header>
 
-    <section id="news" role="region" aria-labelledby="news-title">
-        <h2 id="news-title">Actualités</h2>
-        <div class="grid news-grid">
-            <div class="card news-item">
-                <h3>Titre de l'actualité 1</h3>
-                <p>Date : <time datetime="2025-11-01">01 Novembre 2025</time></p>
-                <p>Résumé de l'actualité ou événement récent.</p>
-                <a href="#" aria-label='Lire la suite de "Titre de l'actualité 1"'>Lire la suite</a>
+    <main>
+        <section id="about">
+            <div class="about_wrapper container">
+                <div class="left">
+                    <h2>À propos de nous</h2>
+                    <p>Global Vision & Created Invest est une structure dynamique et intégrée, positionnée à
+                        l'intersection de l'information, de l'innovation et de l'investissement.</p>
+                    <p>Nous soutenons également l’État dans ses actions, particulièrement dans les secteurs vulnérables
+                        et locaux, afin de favoriser un développement inclusif et durable pour l’ensemble de la
+                        communauté.</p>
+                </div>
+                <div class="right">
+                    <img src="./images/buld.jpg" alt="">
+                </div>
             </div>
-            <div class="card news-item">
-                <h3>Titre de l'actualité 2</h3>
-                <p>Date : <time datetime="2025-10-25">25 Octobre 2025</time></p>
-                <p>Résumé d'une autre information importante.</p>
-                <a href="#" aria-label='Lire la suite de "Titre de l'actualité 2"'>Lire la suite</a>
+        </section>
+
+        <section id="mission">
+            <div class="mission_wrapper container">
+                <div class="mission-heading general-heading">
+                    <h2>Notre Mission</h2>
+                    <p>Notre mission est de catalyser la croissance en transformant les idées novatrices en réussites
+                        économiques tangibles.</p>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./images/Wavy_Bus-22_Single-05.jpg" alt="">
+                        <div class="text">
+                            <h3>Informer</h3>
+                            <p>Nous nous engageons à informer et sensibiliser le public sur les enjeux économiques,
+                                technologiques, culturels et sociaux, en mettant l’accent sur la compréhension,
+                                l’analyse et l’anticipation des transformations du monde contemporain.</p>
+                        </div>
+                        <div class="content">
+                            <p><strong>Économique :</strong> Promouvoir la culture financière et entrepreneuriale,
+                                expliquer les dynamiques de marché et aider chacun à saisir les opportunités et les
+                                défis liés à l’économie locale et mondiale.</p>
+                            <p><strong>Technologique :</strong> Mettre en lumière les innovations et les avancées
+                                technologiques, tout en sensibilisant aux impacts sociaux, éthiques et environnementaux
+                                de ces transformations.</p>
+                            <p><strong>Culturel :</strong> Valoriser la diversité culturelle et artistique, encourager
+                                le dialogue interculturel et souligner le rôle des traditions et des créations dans le
+                                développement de la société.</p>
+                            <p><strong>Social :</strong> Explorer les enjeux sociétaux tels que l’éducation,
+                                l’inclusion, la santé et l’environnement afin de favoriser une citoyenneté éclairée et
+                                engagée.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/light-bulb-lit-many-lights.jpg" alt="">
+                        <div class="text">
+                            <h3>Innover</h3>
+                            <p>Concevoir et développer des projets et solutions innovants dans tous les secteurs, en
+                                créant une valeur tangible et durable pour les entreprises et la société.</p>
+                        </div>
+                        <div class="content">
+                            <p><strong>Innovation transversale :</strong> Développer des solutions répondant aux besoins
+                                actuels et anticipant les défis futurs.</p>
+                            <p><strong>Création de valeur :</strong> Générer un impact économique, social et
+                                technologique concret.</p>
+                            <p><strong>Approche intégrée :</strong> Combiner expertise, créativité et technologie pour
+                                proposer des projets cohérents et adaptables.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/business-concept-with-graphic-holography.jpg" alt="">
+                        <div class="text">
+                            <h3>Investir</h3>
+                            <p>Identifier et mettre en relation des investisseurs avec des projets innovants afin de
+                                faciliter leur financement et assurer leur concrétisation.</p>
+                        </div>
+                        <div class="content">
+                            <p><strong>Recherche ciblée :</strong> Identifier des investisseurs alignés avec les projets
+                                proposés.</p>
+                            <p><strong>Mise en relation stratégique :</strong> Créer des partenariats solides entre
+                                porteurs de projets et investisseurs.</p>
+                            <p><strong>Accompagnement :</strong> Suivre les projets tout au long de leur développement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/images/consulting-professional-expert-service-business.jpg" alt="">
+                        <div class="text">
+                            <h3>Conseiller</h3>
+                            <p>Agir en tant que guide stratégique pour les porteurs de projets et leurs partenaires, en
+                                les accompagnant dans la planification, le développement et la réalisation de leurs
+                                initiatives.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects-wrapper container">
+                <div class="projects-heading general-heading">
+                    <h2>Conception des projets</h2>
+                    <p>These projects combine innovation, investment and community engagement, contributing to social
+                        cohesion, reducing unemployment and empowering young peopl</p>
+                </div>
+                <div class="images">
+                    <img src="./images/business-concept-with-graphic-holography.jpg" alt="">
+
+                </div>
+                <div class="project-card-container cards-container">
+                    <div class="card">
+                        <div class="main">
+
+                            <div class="text">
+                                <h3>Projet 1 : Plateforme communautaire multimédia locale “Voix du Quartier”</h3>
+                                <p><strong>Objectif :</strong> Créer un média hyperlocal qui informe, engage et valorise
+                                    la communauté locale tout en générant des revenus durables.</p>
+                            </div>
+                            <div class="content">
+                                <h4>Description :</h4>
+                                <div>
+                                    <p>Application et site web centralisant l’actualité locale.</p>
+                                    <p>Espace participatif pour articles, vidéos ou podcasts.</p>
+                                    <p>Journalisme collaboratif avec écoles et associations locales.</p>
+                                    <p>Monétisation via publicités locales, abonnements premium et sponsors.</p>
+                                </div>
+                                <div>
+                                    <h4>Innovation :</h4>
+                                    <p>IA pour personnaliser l’actualité selon les centres d’intérêt.</p>
+                                    <p>Cartographie interactive des événements et initiatives.</p>
+                                    <p>Analyse des tendances sociales et économiques locales.</p>
+                                </div>
+                                <div>
+                                    <h4>Impact attendu :</h4>
+                                    <p>Renforcement du lien social et engagement citoyen.</p>
+                                    <p>Mise en lumière des talents et entreprises locales.</p>
+                                    <p>Création d’un écosystème médiatique durable.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-flipper">
+                            <img src="./images/group-happy-african-volunteers-put-hands-hands-park-africa-volunteering-charity-people-ecology-concept.jpg"
+                                alt="">
+                            <img src="./images/group-young-african-friends-with-facemasks-using-their-phones-park.jpg"
+                                alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="images-flipper">
+                            <img src="./images/group-happy-african-volunteers-with-garbage-bags-cleaning-area-park-africa-volunteering-charity-people-ecology-concept.jpg "
+                                alt="">
+                            <img src="./images/black-woman-running-flower-business-front-view.jpg" alt="">
+
+                        </div>
+                        <div class="main">
+                            <div class="text">
+                                <h3>Projet 2 : “EcoQuartier Connect” – Communautés durables et autonomes</h3>
+                                <p><strong>Objectif :</strong> Promouvoir des modes de vie durables dans les quartiers
+                                    urbains tout en créant un impact social positif.</p>
+                            </div>
+                            <div class="content">
+                                <h4>Description :</h4>
+                                <div>
+                                    <p>Micro-jardins urbains et fermes verticales pour légumes locaux et bio.</p>
+                                    <p>Réseau d’économie circulaire : compostage, recyclage et réutilisation.</p>
+                                    <p>Formation et emploi des jeunes et femmes locales.</p>
+                                    <p>Application mobile pour suivre la production et coordonner les activités.</p>
+                                </div>
+                                <div>
+                                    <h4>Innovation :</h4>
+                                    <p>Capteurs pour optimiser l’irrigation et le suivi des ressources.</p>
+                                    <p>Économie participative entre habitants.</p>
+                                    <p>Mesure d’impact social et environnemental via indicateurs clairs.</p>
+                                </div>
+                                <div>
+                                    <h4>Impact attendu :</h4>
+                                    <p>Réduction des déchets et promotion de la durabilité locale.</p>
+                                    <p>Création d’emplois et renforcement des compétences.</p>
+                                    <p>Sensibilisation aux enjeux environnementaux et sociaux.</p>
+                                    <p>Renforcement du tissu social et autonomie des communautés.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="images-flipper">
+                            <img src="./images/women-working-together-front-view.jpg" alt="">
+                            <img src="./images/close-up-woman-market.jpg" alt="">
+
+                        </div>
+                        <div class="text">
+                            <h3>Projet 3 : Investissement et Création de Valeur</h3>
+                            <p><strong>Objectif :</strong> Faciliter l’investissement stratégique dans des projets
+                                innovants pour générer une valeur économique, sociale et technologique durable.</p>
+                        </div>
+                        <div class="content">
+                            <h4>Description :</h4>
+                            <div>
+                                <p>Identifier des projets à fort potentiel.</p>
+                                <p>Créer des partenariats solides pour assurer la réussite.</p>
+                                <p>Accompagner les porteurs de projets de l’idée à la réalisation.</p>
+                                <p>Développer des outils pour faciliter transparence et suivi des investissements.</p>
+                            </div>
+                            <div>
+                                <h4>Innovation :</h4>
+                                <p>Solutions technologiques pour la gestion des projets et communication.</p>
+                                <p>Écosystème d’investissement participatif.</p>
+                                <p>Approche combinant stratégie financière, impact social et durabilité
+                                    environnementale.</p>
+                            </div>
+                            <div>
+                                <h4>Impact attendu :</h4>
+                                <p>Maximisation du retour sur investissement et impact positif sur la société.</p>
+                                <p>Soutien à l’innovation locale et à l’entrepreneuriat.</p>
+                                <p>Renforcement des capacités des porteurs de projets.</p>
+                                <p>Création d’un modèle reproductible de projets à forte valeur ajoutée.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="projects-summary">
+                    <p>NB//:
+                        Ces projets combinent innovation, investissement et engagement communautaire, contribuant à la
+                        cohésion sociale, à la réduction du chômage et à la responsabilisation des jeunes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="news">
+            <div class="news-wrapper container">
+                <div class="news-heading">
+                    <h2>Actualités</h2>
+                    <p>Updade the latest information on our projects we are woring on and more.. </p>
+                </div>
+                <div class="news-content">
+                    <div class="card news-item">
+                        <h3>Titre de l'actualité 1</h3>
+                        <p class="date">Date : 01 Novembre 2025</p>
+                        <p>Résumé de l'actualité ou événement récent.</p>
+                        <a href="#" aria-label="Lire la suite de l'actualité 1">Lire la suite >></a>
+                    </div>
+                    <div class="card news-item">
+                        <h3>Titre de l'actualité 2</h3>
+                        <p class="date">Date : 25 Octobre 2025</p>
+                        <p>Résumé d'une autre information importante.</p>
+                        <a href="#" aria-label="Lire la suite de l'actualité 2">Lire la suite >></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-wrapper container">
+                <div class="left">
+                    <h2>contactez-nous</h2>
+                    <a href="#">
+                        <img src="./images/Logo.png" alt="Global Vision & Created Invest logo">
+                    </a>
+                    <div class="address">
+                        <p><i class="fa-solid fa-envelope icon"></i><a
+                                href="mailto:contact@globalvision-invest.com">contact@globalvision-invest.com</a></p>
+                        <p><i class="fa-solid fa-tty icon"></i> <a href="tel:+243811131111">+243 811 131 111</a></p>
+                        <p><i class="fa-solid fa-address-card icon"></i><span>Aru, République Démocratique du
+                                Congo</span> </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul class="menu">
+                        <h2>liens de menu</h2>
+                        <li><a href="#about">Mission</a></li>
+                        <li><a href="#mission">À propos</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#news">Actualités</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="socials">
+                        <h2>réseaux sociaux</h2>
+                        <li><i class="fa-brands fa-facebook-f icon"></i><a href="">Facebook</a> </li>
+                        <li><i class="fa-brands fa-instagram icon"></i><a href="">Instagram</a> </li>
+                        <li><i class="fa-brands fa-x-twitter icon"></i><a href="">Twitter</a> </li>
+                        <li><i class="fa-brands fa-tiktok icon"></i><a href="">Tiktok</a> </li>
+                    </ul>
+                    <!-- <ul class="terms">
+                        <h2>Termes</h2>
+                        <li><a href="">Termes et Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul> -->
+                    
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <div class="divider"></div>
+
+    <footer id="footer">
+        <div class="footer_wrapper container">
+
+            &copy; 2025 Global Vision & Created Invest. Tous droits réservés.
         </div>
-    </section>
+    </footer>
 
-    <section id="contact" role="region" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contactez-nous</h2>
-        <p>Email : <a href="mailto:contact@globalvision-invest.com">contact@globalvision-invest.com</a></p>
-        <p>Téléphone : <a href="tel:+243811131111">+243 811 131 111</a></p>
-        <p>Adresse : Aru, République Démocratique du Congo</p>
-    </section>
-</main>
-
-<footer>
-    &copy; 2025 Global Vision & Created Invest. Tous droits réservés.
-</footer>
-
-<script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-
-    menuToggle.addEventListener('click', () => {
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        menuToggle.setAttribute('aria-expanded', !expanded);
-        navLinks.classList.toggle('hidden');
-    });
-</script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
