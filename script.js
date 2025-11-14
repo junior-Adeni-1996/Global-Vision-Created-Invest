@@ -1,65 +1,28 @@
-// ====== VARIABLES ======
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
-const navItems = document.querySelectorAll('nav a[href^="#"]');
-const header = document.querySelector('header');
+const navbar = document.querySelector(".navbar");
+const scrollWatcher = document.createElement("div");
+const humburger = document.querySelector(".humburger-menu");
+const navLinks = document.querySelector(".nav-links");
+// const logoTwo = document.querySelector(".logo-two");
 
-// ====== MENU MOBILE ======
-if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        menuToggle.setAttribute('aria-expanded', !expanded);
-        navLinks.classList.toggle('hidden');
-        navLinks.classList.toggle('slide-in'); // animation CSS
-    });
-}
+scrollWatcher.setAttribute("data-scroll-watcher", "");
+navbar.before(scrollWatcher);
 
-// ====== SCROLL SMOOTH & FERMETURE MENU ======
-navItems.forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
+const navObserver = new IntersectionObserver((entries) => {
 
-        if (targetSection) {
-            const headerOffset = header.offsetHeight;
-            const elementPosition = targetSection.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    navbar.classList.toggle('sticky', !entries[0].isIntersecting)
+},{rootMargin: "50px 0px 0px 0px"})
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
+//the rootMargin is where the scroll takes effect and also the unit'px' have to be present ot it will not work: the attribute set on the scrollWatcher can be used in the css to make changes too
 
-        // Fermer le menu mobile après clic
-        if (!navLinks.classList.contains('hidden')) {
-            navLinks.classList.add('hidden');
-            menuToggle.setAttribute('aria-expanded', false);
-        }
-    });
-});
+navObserver.observe(scrollWatcher);
 
-// ====== HEADER STICKY & LIEN ACTIF ======
-window.addEventListener('scroll', () => {
-    // Header sticky
-    if (window.scrollY > 50) {
-        header.classList.add('sticky');
-    } else {
-        header.classList.remove('sticky');
-    }
 
-    // Lien actif
-    navItems.forEach(link => {
-        const section = document.querySelector(link.getAttribute('href'));
-        if (section) {
-            const sectionTop = section.offsetTop - header.offsetHeight - 10;
-            const sectionBottom = sectionTop + section.offsetHeight;
-            if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
-        }
-    });
-});
+humburger.addEventListener("click", () =>{
+    humburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-links").forEach(e => e.addEventListener("click", () => {
+    humburger.classList.remove("active");
+    navLinks.classList.remove("active");
+}))
