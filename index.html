@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Vision & Created Invest</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/568e778f0b.js" crossorigin="anonymous"></script>
 </head>
@@ -17,10 +17,10 @@
     <nav aria-label="Navigation principale" id="navbar" class="navbar">
         <div class="navbar_wrapper container">
             <a href="#">
-                <img src="Images/Logo.png" alt="Logo de Global Vision & Created Invest">
+                <img src="./images/Logo.png" alt="Global Vision & Created Invest logo">
             </a>
             <!-- <a href="#" class="logo-two" >
-                <img src="Images/Logo.png" alt="Logo de Global Vision & Created Invest">
+                <img src="./Images/Logo.png" alt="Logo de Global Vision & Created Invest">
             </a> -->
             <ul class="nav-links">
                 <li><a href="#about">À propos</a></li>
@@ -44,7 +44,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <section id="about">
             <div class="about_wrapper container">
@@ -57,7 +56,7 @@
                         communauté.</p>
                 </div>
                 <div class="right">
-                    <img src="./images/buld.jpg" alt="">
+                    <<img src="./images/buld.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -129,7 +128,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="/images/consulting-professional-expert-service-business.jpg" alt="">
+                        <img src="./images/consulting-professional-expert-service-business.jpg" alt="">
                         <div class="text">
                             <h3>Conseiller</h3>
                             <p>Agir en tant que guide stratégique pour les porteurs de projets et leurs partenaires, en
@@ -231,11 +230,6 @@
                     </div>
 
                     <div class="card">
-                        <div class="images-flipper">
-                            <img src="./images/women-working-together-front-view.jpg" alt="">
-                            <img src="./images/close-up-woman-market.jpg" alt="">
-
-                        </div>
                         <div class="text">
                             <h3>Projet 3 : Investissement et Création de Valeur</h3>
                             <p><strong>Objectif :</strong> Faciliter l’investissement stratégique dans des projets
@@ -264,11 +258,16 @@
                                 <p>Création d’un modèle reproductible de projets à forte valeur ajoutée.</p>
                             </div>
                         </div>
+                        <div class="images-flipper">
+                            <img src="./images/women-working-together-front-view.jpg" alt="">
+                            <img src="./images/close-up-woman-market.jpg" alt="">
+
+                        </div>
                     </div>
 
                 </div>
                 <div class="projects-summary">
-                    <p>NB//:
+                    <p>NB :
                         Ces projets combinent innovation, investissement et engagement communautaire, contribuant à la
                         cohésion sociale, à la réduction du chômage et à la responsabilisation des jeunes.
                     </p>
@@ -280,21 +279,58 @@
             <div class="news-wrapper container">
                 <div class="news-heading">
                     <h2>Actualités</h2>
-                    <p>Updade the latest information on our projects we are woring on and more.. </p>
+                    <p>Consultez les dernières informations sur nos projets en cours et bien plus encore. </p>
                 </div>
-                <div class="news-content">
-                    <div class="card news-item">
-                        <h3>Titre de l'actualité 1</h3>
+               <div class="card news-item" id="news1">
+                     <h3>Titre de l'actualité 1</h3>
                         <p class="date">Date : 01 Novembre 2025</p>
-                        <p>Résumé de l'actualité ou événement récent.</p>
-                        <a href="#" aria-label="Lire la suite de l'actualité 1">Lire la suite >></a>
+                        <img src="./images/téléchargement.jpeg" alt="Photo de l'actualité 1">
+                        <p>Le conseil municipal de Saint-Laurent-sur-Mer a voté hier soir un nouveau plan de mobilité urbaine visant à réduire la circulation dans le centre-ville. Le maire, Claire Dubois, a expliqué que ce projet prévoit la création de pistes cyclables supplémentaires et l’extension des zones piétonnes. “Nous voulons rendre notre ville plus respirable et agréable pour tous les habitants”, a-t-elle déclaré. Cette décision a été soutenue par une large majorité, mais quelques commerçants craignent une baisse de la fréquentation.</p>
+                        <style>
+        /* Images des actualités */
+        .news-item img {
+           width: 100%;       /* prend toute la largeur de sa carte */
+            max-width: 300px;  /* largeur maximale */
+            height: auto;      /* garde les proportions */
+            display: block;    /* supprime les espaces en dessous */
+            margin: 0 auto 15px auto; /* centre et espace en dessous */
+            border-radius: 8px; /* coins arrondis optionnel */
+            object-fit: cover; /* remplissage esthétique */
+        }
+    </style>
+
+                    <!-- Boutons de partage -->
+                    <div class="share-buttons">
+                    <a href="https://wa.me/?text=Regarde%20cette%20actualité%20:%20https://mon-site.com#news1" target="_blank">
+                    Partager sur WhatsApp
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://mon-site.com#news1" target="_blank">
+                         Partager sur Facebook
+                        </a>
+                         <a href="https://twitter.com/intent/tweet?text=Regarde%20cette%20actualité&url=https://mon-site.com#news1" target="_blank">
+                             Partager sur Twitter
+                         </a>
                     </div>
+                </div>
                     <div class="card news-item">
                         <h3>Titre de l'actualité 2</h3>
                         <p class="date">Date : 25 Octobre 2025</p>
                         <p>Résumé d'une autre information importante.</p>
                         <a href="#" aria-label="Lire la suite de l'actualité 2">Lire la suite >></a>
                     </div>
+                    <div class="card news-item" id="news2">
+    <h3>Titre de l'actualité 2</h3>
+    <p class="date">Date : 25 Octobre 2025</p>
+    <img src="./images/news2.jpg" alt="Photo de l'actualité 2">
+    <p>Résumé complet ou description détaillée...</p>
+
+    <div class="share-buttons">
+        <a href="https://wa.me/?text=Regarde%20cette%20actualité%20:%20https://mon-site.com#news2" target="_blank">Partager sur WhatsApp</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://mon-site.com#news2" target="_blank">Partager sur Facebook</a>
+        <a href="https://twitter.com/intent/tweet?text=Regarde%20cette%20actualité&url=https://mon-site.com#news2" target="_blank">Partager sur Twitter</a>
+    </div>
+</div>
+
                 </div>
             </div>
         </section>
@@ -315,14 +351,6 @@
                     </div>
                 </div>
                 <div class="right">
-                    <ul class="menu">
-                        <h2>liens de menu</h2>
-                        <li><a href="#about">Mission</a></li>
-                        <li><a href="#mission">À propos</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#news">Actualités</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
                     <ul class="socials">
                         <h2>réseaux sociaux</h2>
                         <li><i class="fa-brands fa-facebook-f icon"></i><a href="">Facebook</a> </li>
@@ -349,8 +377,8 @@
 
             &copy; 2025 Global Vision & Created Invest. Tous droits réservés.
         </div>
+        <div class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 
