@@ -5,3 +5,55 @@
     <priority>1.0</priority>
   </url>
 </urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://junior-adeni-1996.github.io/Global-Vision-Created-Invest/</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Section À propos -->
+    <url>
+        <loc>https://junior-adeni-1996.github.io/Global-Vision-Created-Invest/#about</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Section Mission -->
+    <url>
+        <loc>https://junior-adeni-1996.github.io/Global-Vision-Created-Invest/#mission</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Section Projets -->
+    <url>
+        <loc>https://junior-adeni-1996.github.io/Global-Vision-Created-Invest/#projects</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Section Actualités -->
+    <url>
+        <loc>https://junior-adeni-1996.github.io/Global-Vision-Created-Invest/#news</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Section Contact -->
+    <url>
+        <loc>https://junior-adeni-1996.github.io/Global-Vision-Created-Invest/#contact</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
