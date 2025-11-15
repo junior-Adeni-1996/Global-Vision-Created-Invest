@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://junior-adeni-1996.github.io/sitemap.xml
+Sitemap: https://junior-adeni-1996.github.io/Global-Vision-Created-Invest/sitemap.xml
