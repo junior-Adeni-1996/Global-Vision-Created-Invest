@@ -1,3 +1,13 @@
-title: Mon site GitHub Pages
-description: Mon premier site avec un thème Jekyll
 theme: minima
+title: "Global Vision & Created Invest"
+description: "Plateforme dédiée à l'information, l'innovation, l'investissement et l'accompagnement stratégique pour les communautés."
+url: "https://junior-adeni-1996.github.io"
+baseurl: "/Global-Vision-Created-Invest"
+
+# Empêche Jekyll de traiter certains fichiers
+exclude:
+  - README.md
+
+# Activer automatiquement un sitemap Jekyll (optionnel)
+plugins:
+  - jekyll-sitemap
