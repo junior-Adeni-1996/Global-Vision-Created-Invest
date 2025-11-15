@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -186,11 +187,11 @@ p {
 }
 
 .about_wrapper .left {
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .about_wrapper .left h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--primary-color);
 }
 
@@ -351,13 +352,15 @@ p {
     left: 10rem;
 }
 
-.projects-wrapper .card .images-flipper img:nth-child(1):hover {
+.projects-wrapper .card .images-flipper img:nth-child(1):hover,
+.projects-wrapper .card .images-flipper img:nth-child(1):focus {
     transform: rotate(0deg);
     left: 10rem;
     transform: scale(1.2);
 }
 
-.projects-wrapper .card .images-flipper img:nth-child(2):hover {
+.projects-wrapper .card .images-flipper img:nth-child(2):hover,
+.projects-wrapper .card .images-flipper img:nth-child(2):focus {
     transform: scale(1.2);
 }
 
@@ -460,7 +463,7 @@ p {
 
 .contact-wrapper h2 {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     padding-bottom: .7rem;
     color: var(--brown-color);
 }
@@ -488,6 +491,18 @@ p {
     align-items: center;
 }
 
+.contact-wrapper .left .address p {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-wrapper .left .address p .icon{
+    font-size: 1.5rem;
+}
+
 .contact-wrapper .left .address p a {
     transition: 300ms ease-in-out;
 }
@@ -513,7 +528,7 @@ p {
 }
 
 .contact-wrapper .left .address p span {
-    max-width: 250px;
+    max-width: 300px;
 }
 
 .contact-wrapper .right {
@@ -568,6 +583,31 @@ p {
     font-size: 14px;
 }
 
+/* ===== Scroll-To-Top ======= */
+.scroll-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 6rem;
+    background-color: #666;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    pointer-events: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.scroll-to-top.scroll {
+    opacity: 1;
+    /* allow clicks when visible */
+    pointer-events: auto;
+}
 
 
 
@@ -590,6 +630,9 @@ p {
     .navbar_wrapper ul {
         gap: 0.5rem;
     }
+
+    /* ======= Section: Projects ======= */
+
 }
 
 @media screen and (max-width: 700px) {
@@ -621,8 +664,8 @@ p {
 
     .nav-links {
         position: fixed;
-        top: 0;
-        right: -100%;
+        top: -100%;
+        right: 0;
         background-color: #fff;
         transition: 300ms ease-in-out;
         width: 100%;
@@ -637,7 +680,7 @@ p {
     }
 
     .nav-links.active {
-        right: 0;
+        top: 0;
     }
 
     .navbar_wrapper .nav-links li a {
